@@ -1,17 +1,3 @@
-
-# Script de Instalação do Archivematica 1.6.1 no Ubuntu 14.04
-
-### Instruções de instalação do Archivematica:
-* Faça o download do zip pelo GitHub;
-* Extraia os arquivos em um diretorio de seu PC;
-* No terminal acesse o diretorio em que voce extraiu os arquivos;
-* Como root no ubuntu execute o seguinte arquivo no terminal   ``script.sh``
-* Serão solicitadas informações durante a instalação, responda todas e aguarde.
-* Acesso ao Archivematica -> http://localhost/installer/welcome/
-* Acesso ao Archivematica Storage Service -> http://localhost:8000/
-* O usuario e senha padrões para login são ``User: test`` & ``Password: test``
-**Leia o guia de pós-instalação no site do archivematica para mais detalhes -> [post-install](https://www.archivematica.org/en/docs/archivematica-1.6/admin-manual/installation/installation/#post-install-config)** 
-
 ### Importante!!!
 * Se o script não funcionou em seu sistema execute o mesmo em uma instalação "zerada" do Ubuntu 14.04, sem demais programas instalados, pois os mesmos podem conflitar com algum processo da instalação.
 
@@ -21,11 +7,14 @@
 O jogador tem 7 fileiras de cartas com 7 cartas cada e um monte com 3 cartas inicialmente, o objetivo é montar mãos e as "descartar", no ato do "descarte" são contabilizados pontos para a mão baseando-se no sistema de pontos utilizado no pocker.
 O jogador pode adicionar cartas a mão, mandar cartas para o monte, verificar sua mão atual e descartar a mão (contabilizar pontos), o objetivo do jogo é fazer o maior número de pontos, a execução encerra com o comando do usuário, o mesmo deve a encerrar quando tiver menos de 5 cartas, pois assim, não pode formar uma mão!
 
+###Semente-> 
+Para fins de teste a semente do rand está em 1, se quiser usar outra sequencia ou deixar o jogo "aleatório" basta troca-lá!
+
 ###Descrição do trabalho->
-*Objetivo:
+* Objetivo:
 Consolidar seu conhecimento de estruturas dinâmicas de dados (filas, pilhas), através da programação, em linguagem C, de um jogo de paciência.
 
-*Descrição:
+* Descrição:
 Seu programa deverá implementar um jogo de paciência baseado nas regras do jogo de pôquer.
 O jogo deverá funcionar da seguinte maneira:
 existem 7 fileiras de cartas, visíveis ao usuário, uma pilha de reserva e uma fileira de montagem de mão;
@@ -40,13 +29,13 @@ cartas usadas para fazer uma mão serão descartadas após a contagem de pontos;
 o jogo termina ao haverem menos de 4 cartas disponíveis nas fileiras (a 5a carta virá obrigatoriamente da pilha no caso de haverem exatamente 4 cartas nas fileiras);
 cartas que sobrarem na pilha ao final das cartas das fileiras serão desconsideradas.
 
-*Detalhes relevantes para a implementação em C:
+* Detalhes relevantes para a implementação em C:
 Seu programa deverá utilizar as seguintes estruturas dinâmicas de dados:
 7 filas simples para a implementação das fileiras principais;
 uma pilha simples para a pilha de reserva;
 uma lista ordenada para a mão (ordem numérica ascendente).
 
-*Observações gerais:
+* Observações gerais:
 o trabalho deverá ser feito individualmente
 funções para o embaralhamento inicial e contagem de pontos de uma mão lhe serão fornecidas.
 
