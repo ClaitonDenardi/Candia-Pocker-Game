@@ -1,13 +1,13 @@
 # Trabalho para a disciplina de Estruturas de Dados.
 
-### Como Jogar->
+### Como Jogar
 O jogador tem 7 fileiras de cartas com 7 cartas cada e um monte com 3 cartas inicialmente, o objetivo é montar mãos e as "descartar", no ato do "descarte" são contabilizados pontos para a mão baseando-se no sistema de pontos utilizado no pocker.
 O jogador pode adicionar cartas a mão, mandar cartas para o monte, verificar sua mão atual e descartar a mão (contabilizar pontos), o objetivo do jogo é fazer o maior número de pontos, a execução encerra com o comando do usuário, o mesmo deve a encerrar quando tiver menos de 5 cartas, pois assim, não pode formar uma mão!
 
-### Semente-> 
+### Semente
 Para fins de teste a semente do rand está em 1, se quiser usar outra sequencia ou deixar o jogo "aleatório" basta troca-lá!
 
-### Descrição do trabalho->
+### Descrição do trabalho
 * Objetivo:
 Consolidar seu conhecimento de estruturas dinâmicas de dados (filas, pilhas), através da programação, em linguagem C, de um jogo de paciência.
 
@@ -31,9 +31,5 @@ Seu programa deverá utilizar as seguintes estruturas dinâmicas de dados:
 7 filas simples para a implementação das fileiras principais;
 uma pilha simples para a pilha de reserva;
 uma lista ordenada para a mão (ordem numérica ascendente).
-
-* Observações gerais:
-o trabalho deverá ser feito individualmente
-funções para o embaralhamento inicial e contagem de pontos de uma mão lhe serão fornecidas.
 
 
